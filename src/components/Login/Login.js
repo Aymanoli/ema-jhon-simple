@@ -9,7 +9,7 @@ const Login = () => {
     const {singInUseingGoogle} = useAuth();
     const location = useLocation()
     const history = useHistory()
-    const redirect_uri = location.state?.from || '/shop ';
+    const redirect_uri = location.state?.from || '/shop';
 
     const handleGoogleLogin = () =>{
         singInUseingGoogle()

@@ -10,10 +10,10 @@ const Shipping = () => {
     }
     return (
         <div>
-            <form className="shipping-form" onSubmit={handleSbumit(onSubmit)}>
+            <form className="shipping-form" onSubmit={handleSbumit}>
                 <input defaultValue={user.displayName} {...register("name")} />
                 <input defaultValue={user.email} {...register("email",{required: true})} />
-                {error.email && <span className='error'>This field is required</span>}
+                {error?.email && <span className='error'>This field is required</span>}
                 <input placeholder="Address" defaultValue="" {...register("address")} />
                 <input placeholder="City" defaultValue="" {...register("city")} />
                 <input placeholder="Phone number" defaultValue="" {...register("phone number")} />
